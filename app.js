@@ -17,7 +17,7 @@ var app = express();
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
-app.use(favicon(__dirname + '/public/images/favicon.png'));
+app.use(favicon(__dirname + '/public/images/favicon/favicon.ico'));
 app.use(logger('dev'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));

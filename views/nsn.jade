@@ -2,28 +2,13 @@ extends layout
 
 
 block content
-	div.container
-		h1!= title		
-		div.NsnPage
-			div.NsnPage-container
-				div.row
-					div.col-md-3.well.well-sm.text-center
-						a(class='btn btn-primary' href='1234-12-123-12345') 1234-12-123-12345
-						br
-						br
-						a(class='btn btn-primary' href='1234-12-123-12345') 1234-12-123-12346					
-					div.col-md-3.well.well-sm.text-center
-						a(class='btn btn-primary' href='1234-12-123-12347') 1234-12-123-12347
-						br
-						br
-						a(class='btn btn-primary' href='1234-12-123-12348') 1234-12-123-12348
-					div.col-md-3.well.well-sm.text-center
-						a(class='btn btn-primary' href='1234-12-123-12349') 1234-12-123-12349
-						br
-						br
-						a(class='btn btn-primary' href='1234-12-123-12350') 1234-12-123-12350
-					div.col-md-3.well.well-sm.text-center
-						a(class='btn btn-primary' href='1234-12-123-12349') 1234-12-123-12351
-						br
-						br
-						a(class='btn btn-primary' href='1234-12-123-12350') 1234-12-123-12352
+	.content
+		.container
+			h1!= title		
+			.NsnPage
+				.NsnPage-container
+					.row
+						each val in ['1234-12-123-12345', '1234-12-123-12346', '1234-12-123-12347', '1234-12-123-12347', '1234-12-123-12349', '1234-12-123-12350']
+							.col-md-6
+								.well.well-sm.text-center
+									a(class='btn btn-primary', href= val) #{val}
