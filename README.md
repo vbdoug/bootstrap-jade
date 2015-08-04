@@ -9,8 +9,7 @@ A quick and easy Node.js + Jade template project, using Twitter Bootstrap.
 - Next, run the app by entering: node app
 - Browse to http://localhost:3000
 
-##Demo:
-http://nodebootstrapper.herokuapp.com
+
 
 ##Contents:
 
@@ -31,6 +30,3 @@ block content
 		h1 Program Name
 		p Hello World
 ```
-
-##Author
-Kory Becker http://www.primaryobjects.com/kory-becker.aspx
